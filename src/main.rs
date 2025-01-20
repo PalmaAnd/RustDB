@@ -1,3 +1,10 @@
+use log::info;
+
+mod disk;
+mod error;
+mod page;
+
 fn main() {
-    println!("RustDB starting ...");
+    env_logger::init();
+    info!("RustDB starting ...");
 }
