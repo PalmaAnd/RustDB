@@ -1,7 +1,8 @@
 use crate::error::{DBError, Result};
 use serde::{Deserialize, Serialize};
 
-pub const PAGE_SIZE: usize = 4096; // Default size defined by SQLLite
+// Default size defined by SQLLite
+pub const PAGE_SIZE: usize = 4096;
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Page {
