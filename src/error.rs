@@ -4,10 +4,10 @@ use thiserror::Error;
 pub enum DBError {
     #[error("I/O error: {0}")]
     Io(#[from] std::io::Error),
-    
+
     #[error("Page error: {0}")]
     Page(String),
-    
+
     #[error("Storage error: {0}")]
     Storage(String),
 }
